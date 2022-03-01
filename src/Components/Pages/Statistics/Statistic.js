@@ -28,7 +28,7 @@ function Statistic() {
           setLink('')
           setInputError('input')
         }).catch(error=>{
-          alert('Invalid Link')
+          errorMessage()
         })
        
         setError('')
@@ -41,7 +41,7 @@ function Statistic() {
        successMessage()
        
       }catch(err){
-       
+        errorMessage()
       }
     }
 
@@ -49,6 +49,15 @@ function Statistic() {
       Swal.fire({
         icon: 'success',
         title: 'Copied to clipboard',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+
+    const errorMessage=()=>{
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid URL',
         showConfirmButton: false,
         timer: 1500
       })
