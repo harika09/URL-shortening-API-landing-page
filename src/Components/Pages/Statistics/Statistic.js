@@ -38,7 +38,7 @@ function Statistic() {
     const copyClipboard = async link =>{
       try{
         await navigator.clipboard.writeText(link)
-       
+       successMessage()
        
       }catch(err){
        
@@ -47,7 +47,6 @@ function Statistic() {
 
     const successMessage=()=>{
       Swal.fire({
-       
         icon: 'success',
         title: 'Copied to clipboard',
         showConfirmButton: false,
@@ -55,16 +54,6 @@ function Statistic() {
       })
     }
 
-    const copyId = (id)=>{
-       shortLink.map((links)=>{
-        if(links.code
-          != id){
-       
-        }else{
-         successMessage()
-        }
-        })
-    }
 
  
 
@@ -94,7 +83,7 @@ function Statistic() {
                   <div className='link-shorten'>
                     <p className='short-link'>{links.short_link}</p>
                     <button className='copy-links'
-                     onClick={()=>{copyClipboard(links.short_link); copyId(links.code) }} >Copy</button>
+                     onClick={()=>{copyClipboard(links.short_link); }} >Copy</button>
                   </div>
                 </div>
               )
