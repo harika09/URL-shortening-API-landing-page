@@ -1,0 +1,27 @@
+.boost-container {
+  background: url("../../assets/images/bg-boost-desktop.svg") no-repeat center;
+  background-size: cover;
+  background-color: #3b3054;
+}
+
+.boost-content {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.boost-content h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  padding-bottom: 30px;
+}
+
+.boost-content a {
+  padding: 10px 35px;
+  background-color: #2acfcf;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.boost-content a:hover {
+  opacity: 0.8;
+}

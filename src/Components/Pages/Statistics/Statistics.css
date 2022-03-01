@@ -1,0 +1,271 @@
+.statistics-container {
+  background-color: #f0f1f6;
+  padding: 50px 0;
+}
+
+.statistics-link-input {
+  position: relative;
+  top: -120px;
+  background: url("../../assets/images/bg-shorten-desktop.svg");
+  padding: 30px;
+  background-color: #3b3054;
+  border-radius: 15px;
+}
+
+.statistics-link-input form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: -80px;
+  margin-bottom: 10px;
+}
+
+.link-shorten {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link-shorten button {
+  background-color: #2acfcf;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.link-shorten .short-link {
+  color: #2acfcf;
+}
+
+.statistics-link-input .error {
+  width: 100%;
+  float: left;
+  text-align: left;
+  display: block;
+  color: red;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.input {
+  padding: 10px 25px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.inputError {
+  padding: 10px 25px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #d82148;
+}
+
+.statistics-link-input input[type="submit"] {
+  border: none;
+  outline: none;
+  background-color: #2acfcf;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.statistics-link-input input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.copy-links.active {
+  background-color: #3b3054;
+}
+
+.statistic-info h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.statistic-info p {
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Card */
+.card-container {
+  padding: 40px 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.line {
+  max-width: 100%;
+  width: 950px;
+  padding: 3px;
+  background-color: #2acfcf;
+  position: relative;
+  top: 150px;
+  z-index: 1;
+}
+
+.card {
+  padding: 10px 30px 30px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.card:nth-child(2) {
+  margin-top: 40px;
+}
+
+.card:nth-child(3) {
+  margin-top: 80px;
+}
+
+.card span {
+  display: block;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  text-align: left;
+  max-width: 300px;
+}
+
+.card .card-logo1 {
+  position: relative;
+  top: -50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 100px;
+  background: url("../../assets/images/icon-brand-recognition.svg") no-repeat
+    center;
+  background-color: #3b3054;
+}
+
+.card .card-logo2 {
+  position: relative;
+  top: -50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 100px;
+  background: url("../../assets/images/icon-detailed-records.svg") no-repeat
+    center;
+  background-color: #3b3054;
+}
+
+.card .card-logo3 {
+  position: relative;
+  top: -50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 100px;
+  background: url("../../assets/images/icon-fully-customizable.svg") no-repeat
+    center;
+  background-color: #3b3054;
+}
+
+@media screen and (max-width: 980px) {
+  /* Statistics */
+
+  .link-result p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .link-shorten button {
+    width: 100%;
+  }
+
+  /* Card */
+  .card-content {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .card span {
+    text-align: center;
+  }
+  .card p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    margin-top: 40px;
+  }
+
+  .card .card-logo1,
+  .card-logo2,
+  .card-logo3 {
+    left: 0;
+    right: 0;
+    top: -55px;
+    margin: 0 auto;
+  }
+
+  .line {
+    top: 450px;
+    width: 450px;
+    margin: 0 auto;
+    transform: rotate(450deg);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .statistics-link-input .error {
+    text-align: center;
+  }
+
+  .statistics-link-input form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .statistics-link-input input[type="text"] {
+    padding: 15px;
+  }
+
+  .link-result,
+  .link-shorten {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .divider {
+    background-color: #000;
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+}
